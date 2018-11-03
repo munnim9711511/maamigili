@@ -1,0 +1,42 @@
+@{
+    Layout="~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h5>Gallery</h5>
+<hr>
+<form action="" method="POST" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col m4 input-field">
+            <input type="text" name="Title">
+            <label>
+                Title
+            </label>
+        </div>
+    </div>
+<div class="row">
+<div class="col m4 input-field">
+      <select name="Text">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="photo">photo</option>
+      <option value="video">video</option>
+    
+    </select>
+<label>
+    catogary
+</label>
+</div>
+</div>
+ <div class="row">
+        <div class="col m4 ">
+               <label>
+                Item
+            </label>
+            <br>
+            <input type="file" name="gpic">
+         
+        </div>
+    </div>
+    <div class="row">
+<input type="submit" value="upload" class="btn">
+    </div>
+</form>

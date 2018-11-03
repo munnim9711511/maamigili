@@ -1,0 +1,11 @@
+<div class="container center-align">
+@foreach (var item in ViewBag.news)
+{
+    <h5 class="dh right-align">@item.Title</h5>
+    <img  src="~/newsImage/@item.ImgUrl" class="responsive-img center-align" style="width: 50%" />
+    <p class="dh" style="text-align: justify;direction: rtl">
+        @item.Text
+    </p>
+}
+</div>
+

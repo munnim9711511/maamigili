@@ -1,0 +1,58 @@
+@{
+    Layout="~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h5>
+    UpdateLinks
+</h5>
+<hr>
+ <form action="UpdateLink" method="post" enctype="multipart/form-data" > 
+     <div class="row">
+        <div class="col m4">
+           <label for="">Titile</label>
+           <br>
+           <input type="text" name="Title">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col m4">
+           <label for="">Image</label>
+           <br>
+           <input type="file" name="NewsPic">
+        </div>
+
+    </div>
+      <div class="row">
+        <div class="col m4 input-field">
+        <select name="Catogary">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="vs">vission and mission</option>
+       <option value="airport">Air port</option>
+      <option value="res">responsibility</option>
+      <option value="IslandInfo">Island Info</option>
+       <option value="GO">goverment offices</option>
+       <option value="air">villa airport</option>
+       <option value="harbour">harbour</option>
+        <option value="service">services</option>
+    </select>
+           <label for="">link</label>
+    
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col m6 input-field " >
+
+ <textarea id="textarea1" class="materialize-textarea" style="font-family: Faruma;direction: rtl;" name="Text"></textarea>
+          <label for="textarea1">Text</label>
+        </div>
+    </div>
+     <div class="row">
+        <div class="col m6 input-field " >
+
+<input type="submit" name="upload" class="btn">
+        </div>
+    </div>
+</form> 

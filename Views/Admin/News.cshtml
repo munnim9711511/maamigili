@@ -1,0 +1,41 @@
+@{
+    Layout="~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h5>
+    Publish news
+</h5>
+<hr>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col m4 s12 input-field">
+            <input type="text" style="font-family:Faruma;direction:rtl;" name="Title" />
+            <label>
+                Title
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col m4 s12 ">
+            <label>
+                Image
+            </label>
+            <br />
+            <input type="file" name="NewsPic" />
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col m10 s12 input-field">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea id="icon_prefix2" class="materialize-textarea" style="font-family:Faruma;direction:rtl" name="Text"></textarea>
+            <label>
+                News
+            </label>
+        </div>
+    </div>
+    <div class="row">
+      <input  type="submit" value="upload" class="btn"/>
+    </div>
+</form>

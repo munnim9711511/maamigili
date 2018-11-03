@@ -1,0 +1,21 @@
+@{
+    Layout="~/Views/Shared/_AdminLayout.cshtml";
+}
+<h5>
+    Slider 
+</h5>
+<hr>
+
+<form action="Slider" method="POST" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col m4 ">
+            <label>Image</label>
+            <input type="file" name="slide"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col m4">
+            <input type="submit" value="upload" class="btn"/>
+        </div>
+    </div>
+</form>

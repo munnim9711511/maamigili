@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - coouncil</title>
+    <link rel="stylesheet" href="~/css/site.css">
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="~/js/jquery-3.3.1.min.js"></script>
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link  rel="stylesheet" href="~\materialize\css\materialize.min.css"> -->
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+
+    <script src="~/js/site.js"></script>
+    
+
+
+   
+</head>
+<body >
+    <nav class="#212121 grey darken-4">
+
+    </nav>
+   
+
+  <ul id="slide-out" class="sidenav">
+    <li><div class="user-view center-align">
+      <div class="background" >
+        <img src="~/images/icon/admin.png" class="">
+      </div>
+      <br><br> <br>
+      <br>
+     
+    </div></li>
+    <li><div class="divider"></div></li>
+    <li><a href="@Url.Action("News","Admin")">upload news</a></li>
+    <li><a href="@Url.Action("Users","Admin")">manage user</a></li>
+    <li><a href="@Url.Action("Slider","Admin")">slider</a></li>
+    <li><a href="@Url.Action("UploadDoc","Admin")">upload doc</a></li>
+    <li><a href="@Url.Action("UpdateLink","Admin")">update url link</a></li>
+    <li><a href="@Url.Action("Cafey","Admin")">Cafey & Restaurent</a></li>
+    <li><a href="@Url.Action("Bussiness","Admin")">Bussines</a></li>
+     <li><a href="@Url.Action("Gallery","Admin")">Gallery</a></li>
+    <li><a href="@Url.Action("Anouncements","Admin")">Anouncements</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  <div class="container">
+    @RenderBody()
+
+  </div>
+
+    
+   
+
+
+</body>
+</html>
