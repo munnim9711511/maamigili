@@ -18,7 +18,16 @@ namespace Coun
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+           var host = new WebHostBuilder()
+
+.UseKestrel()
+
+.UseUrls("http://*:80")
+
+.UseContentRoot(Directory.GetCurrentDirectory())
+
+.UseStartup<Startup>()
+
+.Build();
     }
 }
